@@ -1,0 +1,31 @@
+﻿@using PizzaOrderApp1.Models
+@model List<PizzaItem>
+
+<div class="div" id="homepage">
+    <div>
+        <h1 class="titletext">SELECT YOUR JOE'S PIZZA</h1>
+        <h4 class="belowtitletext">Choose from our Topsellers</h4>
+    </div>
+    <form asp-controller="Order" asp-action="Checkout" method="post">
+        <input id="checkout" class="ordercheckoutbtn" type="submit" value="Checkout" />
+    </form>
+</div>
+<div class="row">
+    @foreach (var pizzaItem in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="@pizzaItem.ImageUrl" class="card-img-top" alt="@pizzaItem.Name">
+                <div class="card-body">
+                    <h5 class="card-title">@pizzaItem.Name</h5>
+                    <p class="card-text">@pizzaItem.Price.ToString("C")</p>
+                    <label class="quantitylabel">
+                        <input id="PizzaId_{@pizzaItem.Id}" type="radio" name="PizzaId" value="@pizzaItem.Id" required />
+                        <span class="quantity">Quantity:</span>
+                        <input class="quantity1" type="number" name="Quantity" value="1" min="1" required />
+                    </label>
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+@font-face {
+    font-family: Royals;
+    src: url('Royals Regular Font.ttf');
+}
+
+nav {
+    border: 0.2px solid #2C2A2B;
+    background: var(--Joe-Orange, linear-gradient(180deg, #FF4C25 -21.84%, #8B1900 112.34%));
+}
+
+.logoimg {
+    width: 60px;
+    height: 80px;
+    margin-left: 40px;
+}
+
+.navtext {
+    color: #FFF;
+    font-family: Royals;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left:20px;
+}
+
+.navtxt {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right:10px;
+}
+
+.div {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between
+}
+
+.titletext {
+    color: #2C2A2B;
+    font-family: Royals;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top:50px;
+}
+
+.belowtitletext {
+    color: #2C2A2B;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom:40px
+}
+
+.card-title {
+    color: #2C2A2B;
+    font-family: Royals;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-text {
+    color: #2C2A2B;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.quantitylabel {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+.quantity {
+    border-radius: 10px;
+    background: #FF4C25;
+    width: 80px;
+    height: 28px;
+    padding-left:8px;
+}
+
+.quantity1 {
+    border-radius: 10px;
+    border: 1px solid #C5C5C5;
+    background: #FFF;
+    padding-left: 10px;
+    width: auto;
+    height: 32px;
+}
+
+.ordercheckoutbtn {
+    border-radius: 20px;
+    background: var(--Joe-Orange, linear-gradient(180deg, #FF4C25 -21.84%, #8B1900 112.34%));
+    width: 180px;
+    height: 60px;
+    color: #FFF;
+    font-family: Royals;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.checkoutdiv {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+table {
+    border-radius: 30px;
+    border: 1px solid #C5C5C5;
+    width: 400px;
+    height: 120px;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+th, td {
+    padding: 20px;
+}
+
+.confirmorderbtn {
+    border-radius: 20px;
+    background: var(--Joe-Orange, linear-gradient(180deg, #FF4C25 -21.84%, #8B1900 112.34%));
+    width: 250px;
+    height: 60px;
+    color: #FFF;
+    font-family: Royals;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-left:50px;
+}
+
+.orderid {
+    background: var(--Joe-Orange, linear-gradient(180deg, #FF4C25 -21.84%, #8B1900 112.34%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
